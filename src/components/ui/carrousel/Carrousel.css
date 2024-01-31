@@ -1,0 +1,7 @@
+.navigation-btn {
+  width: 2em;
+  height: 2em;
+  z-index: 10;
+  border-radius: 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 2px;
+}

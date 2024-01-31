@@ -1,0 +1,19 @@
+@import "../../scss/variables.scss";
+
+.nav-bar-height {
+  min-height: $navbar-height;
+}
+
+@media screen and (min-width: 992px) {
+  .nav-bar-height {
+    height: $navbar-height;
+  }
+}
+
+.nav-bar-link-text {
+  font-weight: 600;
+}
+
+.nav-bar-btn:focus {
+  border-style: none;
+}

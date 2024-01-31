@@ -1,0 +1,60 @@
+{
+  "name": "github-repositories-web-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@tanstack/react-query": "^5.17.10",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^14.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "@web3-storage/parse-link-header": "^3.1.0",
+    "bootstrap": "^5.3.2",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.9.2",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.1",
+    "sass": "^1.69.5",
+    "sass-loader": "^13.3.2",
+    "uuid": "^9.0.1",
+    "vite": "^5.0.12",
+    "vite-plugin-svgr": "^4.2.0",
+    "vite-tsconfig-paths": "^4.3.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "vite --mode development",
+    "build": "tsc && vite build --mode production",
+    "serve": "vite preview",
+    "test": "vitest"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/preset-env": "^7.23.8",
+    "@babel/preset-react": "^7.23.3",
+    "babel-jest": "^29.7.0",
+    "intersection-observer": "^0.12.2",
+    "jest": "^27.5.1",
+    "jsdom": "^24.0.0",
+    "react-test-renderer": "^18.2.0",
+    "vitest": "^1.2.2"
+  }
+}

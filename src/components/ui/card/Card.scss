@@ -1,0 +1,59 @@
+.avatar {
+  border-radius: 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 2px;
+  height: 2.4em;
+}
+
+.zoom:hover {
+  transform: scale(1.07);
+  z-index: 1;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.counters-value {
+  font-weight: 600;
+  color: grey;
+}
+
+.counters-label {
+  font-style: italic;
+  font-weight: 400;
+}
+
+@mixin text {
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.text-description {
+  @include text;
+  -webkit-line-clamp: 3;
+}
+
+.text-title {
+  @include text;
+  -webkit-line-clamp: 2;
+}
+
+// NOTE: in case this value changes then update the value of the constant CARD_MIN_WIDTH_PX
+.card-width {
+  width: 250px;
+  min-width: 250px;
+}
+
+@media screen and (min-width: 768px) {
+  .card-width {
+    width: 300px;
+    min-width: 300px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .card-width {
+    width: 350px;
+    min-width: 350px;
+  }
+}

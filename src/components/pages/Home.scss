@@ -1,0 +1,7 @@
+@import "../../scss/variables.scss";
+
+@media screen and (min-width: 992px) {
+  .home-container {
+    padding-top: $navbar-height;
+  }
+}
