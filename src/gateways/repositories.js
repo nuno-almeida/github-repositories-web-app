@@ -6,7 +6,7 @@ const TOKEN = import.meta.env.VITE_REPOSITORIES_API_TOKEN;
 export const fetchRespositoryById = async (id) => {
   const response = await fetch("https://api.github.com/repositories/" + id, {
     headers: {
-      Authorization: `Bearer ${TOKEN}`,
+      ...(!!TOKEN && { Authorization: `Bearer ${TOKEN}` }),
     },
   });
 
@@ -37,7 +37,7 @@ export const fetchRespositories = async ({
 }) => {
   const response = await fetch(buildGetQuery({ topic, sort, page, per_page }), {
     headers: {
-      Authorization: `Bearer ${TOKEN}`,
+      ...(!!TOKEN && { Authorization: `Bearer ${TOKEN}` }),
     },
   });
 

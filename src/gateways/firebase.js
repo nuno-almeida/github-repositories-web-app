@@ -1,7 +1,7 @@
 const baseUrl = import.meta.env.VITE_FIREBASE_REALTIME_DB_URL;
 
 export const fetchBookmarksByUserId = async (id) => {
-  const response = await fetch(`https://${baseUrl}/users/${id}/bookmarks.json`);
+  const response = await fetch(`${baseUrl}/users/${id}/bookmarks.json`);
 
   if (!response.ok) {
     throw new Error("Failed to retrieve bookmarks for user " + id);
@@ -13,7 +13,7 @@ export const fetchBookmarksByUserId = async (id) => {
 
 export const updateBookmarksByUserId = async ({ id, data }) => {
   const response = await fetch(
-    `https://${baseUrl}/users/${id}/bookmarks.json`,
+    `${baseUrl}/users/${id}/bookmarks.json`,
     {
       method: "PUT",
       body: JSON.stringify(data),
@@ -29,7 +29,7 @@ export const updateBookmarksByUserId = async ({ id, data }) => {
 };
 
 export const fetchTopicsByUserId = async (id) => {
-  const response = await fetch(`https://${baseUrl}/users/${id}/topics.json`);
+  const response = await fetch(`${baseUrl}/users/${id}/topics.json`);
 
   if (!response.ok) {
     throw new Error("Failed to retrieve topics for user " + id);
@@ -40,7 +40,7 @@ export const fetchTopicsByUserId = async (id) => {
 };
 
 export const updateTopicsByUserId = async ({ id, data }) => {
-  const response = await fetch(`https://${baseUrl}/users/${id}/topics.json`, {
+  const response = await fetch(`${baseUrl}/users/${id}/topics.json`, {
     method: "PUT",
     body: JSON.stringify(data),
   });
@@ -54,7 +54,7 @@ export const updateTopicsByUserId = async ({ id, data }) => {
 };
 
 export const fetchAuthByUserName = async (userName) => {
-  const response = await fetch(`https://${baseUrl}/auth/${userName}.json`);
+  const response = await fetch(`${baseUrl}/auth/${userName}.json`);
 
   if (!response.ok) {
     throw new Error("Failed to retrieve auth data for username " + userName);
@@ -65,7 +65,7 @@ export const fetchAuthByUserName = async (userName) => {
 };
 
 export const updateAuthByUserName = async ({ userName, data }) => {
-  const response = await fetch(`https://${baseUrl}/auth/${userName}.json`, {
+  const response = await fetch(`${baseUrl}/auth/${userName}.json`, {
     method: "PUT",
     body: JSON.stringify(data),
   });
@@ -79,7 +79,7 @@ export const updateAuthByUserName = async ({ userName, data }) => {
 };
 
 export const deleteAuthByUserName = async (userName) => {
-  const response = await fetch(`https://${baseUrl}/auth/${userName}.json`, {
+  const response = await fetch(`${baseUrl}/auth/${userName}.json`, {
     method: "DELETE",
   });
 
