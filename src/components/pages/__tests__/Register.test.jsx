@@ -156,7 +156,7 @@ describe("Register component", () => {
     const updateAuthByUserNameSpy = vi.spyOn(
       firebaseGateway,
       "updateAuthByUserName"
-    );
+    ).mockResolvedValue({});
 
     renderRegister();
 
