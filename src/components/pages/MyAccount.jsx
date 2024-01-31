@@ -71,7 +71,7 @@ const MyAccount = () => {
         </strong>
       </label>
       <input
-        className="input-group-text"
+        className="input-group-text w-100"
         type="text"
         value={userName}
         aria-label="username-input"
@@ -91,7 +91,7 @@ const MyAccount = () => {
         <strong>Email</strong>
       </label>
       <input
-        className="input-group-text"
+        className="input-group-text w-100"
         type="text"
         value={email}
         aria-label="email-input"
