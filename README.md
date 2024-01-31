@@ -17,4 +17,4 @@
 <br />
 <h3>Deployment</h3>
 This project is deployed in firebase.
-Open [https://gh-repos-408c1.web.app/](https://gh-repos-408c1.web.app/) to view it in your browser.
+Open https://gh-repos-408c1.web.app to view it in your browser.
